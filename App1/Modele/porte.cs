@@ -90,7 +90,7 @@ namespace App1.Modele
         /// <returns></returns>
         public override string ToString()
         {
-            return "Vous avez fait une dépense en date du " + date + "le montant était de "
+           11 return "Vous avez fait une dépense en date du " + date + "le montant était de "
             + depense + "$ la description de votre achat est " + description;
         }
         /// <summary>
