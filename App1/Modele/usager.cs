@@ -21,7 +21,7 @@ namespace App1.Modele
         public string Prenom { get; set; }
 
         private List<Carte> listeCarte;
-        public int NombreCartes { get; set; }
+        public List<Carte> ListeCarte { get; set; }
 
         private bool actif;
         public bool Actif { get; set; }
@@ -29,11 +29,11 @@ namespace App1.Modele
 
 
 
-        public Usager(string nom, string prenom, int nombreCartes, bool actif)
+        public Usager(string nom, string prenom, int listeCarte, bool actif)
         {
             this.nom = nom;
             this.prenom = prenom;
-            this.nombreCartes = nombreCartes;
+            this.listeCarte = listeCarte;
             this.actif = actif;
         }
 
