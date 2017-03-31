@@ -88,7 +88,7 @@ namespace App1.Modele
         /// <returns></returns>
         public override bool Equals(object obj)
         {
-            
+            Rectum;
         }
     }
 }
