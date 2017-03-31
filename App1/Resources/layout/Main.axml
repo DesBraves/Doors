@@ -3,5 +3,49 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="42.0dp">
+            <Button
+                android:text="Cartes"
+                android:layout_column="0"
+                android:id="@+id/btnCartes"
+                android:layout_width="382.5dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="42.0dp">
+            <Button
+                android:text="Usagers"
+                android:layout_column="0"
+                android:id="@+id/btnUsagers"
+                android:layout_width="382.5dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="42.0dp">
+            <Button
+                android:text="Groupes"
+                android:layout_column="0"
+                android:id="@+id/btnGroupes"
+                android:layout_width="382.5dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="42.0dp">
+            <Button
+                android:text="Portes"
+                android:layout_column="0"
+                android:id="@+id/btnPortes"
+                android:layout_width="382.5dp" />
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
