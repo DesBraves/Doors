@@ -85,37 +85,43 @@ namespace App1.Modele
 
 
         /// <summary>
-        /// Méthode permettant d'obtenir les informations sur une transaction sous forme textuelle.
+        /// Méthode permettant d'obtenir les informations d'une porte sous forme textuelle.
         /// </summary>
         /// <returns></returns>
         public override string ToString()
         {
-           11 return "Vous avez fait une dépense en date du " + date + "le montant était de "
-            + depense + "$ la description de votre achat est " + description;
+            return "Le nom de la porte est " + nom + " sa description est " + description + " il est situé au local " + location + "son état est " + actif + ".";
         }
         /// <summary>
-        /// Méthode permettant de déterminer si deux dépenses sont identiques.
+        /// Méthode permettant de déterminer si deux portes sont identiques.
         /// </summary>
         /// <param name="obj">objet de comparaison</param>
         /// <returns>true si identique...false si non.</returns>
         public override bool Equals(object obj)
         {
-            InfoDepense monInfoDepense = obj as InfoDepense;
-            if ((this.Date.Equals(monInfoDepense.Date))
+            Porte maPorte = obj as Porte;
+            if ((this.Nom.Equals(maPorte.Nom))
                 &&
-                (this.Depense.Equals(monInfoDepense.Depense))
+                (this.Description.Equals(maPorte.Description))
+                &&
+                (this.Location.Equals(maPorte.Location))
+                &&
+                (this.Actif.Equals(maPorte.Actif))
                 )
                 return true;
             return false;
         }
 
         /// <summary>
-        /// Méthode permettant d'obtenir le Hashcode d'une dépense.
+        /// Méthode permettant d'obtenir le Hashcode d'une porte.
         /// </summary>
         /// <returns>Le Hashcode de la dépense.</returns>
         public override int GetHashCode()
         {
-            return (1 * this.Date.Length) + (Convert.ToInt32(2 * Depense)) + (3 * this.Description.Length);
+            return (1 * this.Nom.Length) + (2 * this.Description.Length) + (3 * this.Location.Length);
         }
+
+
+
     }
 }
