@@ -51,8 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlleur\ControlleurPorte.cs" />
-    <Compile Include="DTO\UsagerDTO.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Modele\porte.cs" />
     <Compile Include="Modele\usager.cs" />
@@ -80,6 +78,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Adapteur\" />
+    <Folder Include="Controlleur\" />
+    <Folder Include="DTO\" />
     <Folder Include="Repository\" />
     <Folder Include="Vue\" />
   </ItemGroup>

@@ -122,6 +122,5 @@ namespace App1.Modele
         }
 
 
-
     }
 }
