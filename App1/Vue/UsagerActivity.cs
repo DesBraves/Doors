@@ -12,8 +12,8 @@ using Android.Widget;
 
 namespace App1.Vue
 {
-    [Activity(Label = "VueCartes")]
-    public class VueCartes : Activity
+    [Activity(Label = "UsagerActivity")]
+    public class UsagerActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
