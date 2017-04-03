@@ -17,6 +17,7 @@ namespace App1.DTO
     {
         /// <summary>
         /// nom de l'usager
+        /// fuck off m8
         /// </summary>
 
         public string nom { get; set; }
