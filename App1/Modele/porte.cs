@@ -16,6 +16,7 @@ namespace App1.Modele
     /// </summary>
     class Porte
     {
+        //jo bloe
         /// <summary>
         /// Attribut présentant la porte
         /// </summary>
