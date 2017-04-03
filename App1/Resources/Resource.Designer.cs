@@ -60,6 +60,12 @@ namespace App1
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f05000a
+			public const int ContenuDepense = 2131034122;
+			
+			// aapt resource value: 0x7f050009
+			public const int LabelDepense = 2131034121;
+			
 			// aapt resource value: 0x7f050002
 			public const int btnCartes = 2131034114;
 			
