@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using App1.Modele;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -31,7 +31,14 @@ namespace App1.DTO
         /// <summary>
         /// Propriété permettant d'accéder à l'état de la porte DTO.
         /// </summary>
-
         public bool actif { get; set; }
+
+        public PorteDTO(Porte unePorte)
+        {
+            this.actif = unePorte.Actif;
+            this.description = unePorte.Description;
+            this.location = unePorte.Location;
+            this.nom = unePorte.Nom;
+        }
     }
 }
