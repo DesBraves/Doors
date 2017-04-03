@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using App1.Modele;
+
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -15,32 +15,23 @@ namespace App1.DTO
     class PorteDTO
     {
         /// <summary>
-        /// Attribut présentant le DTO du nom d'une porte
+        /// Propriété permettant d'accéder au nom de la porte DTO.
         /// </summary>
-        public String Nom { get; set; }
-        /// <summary>
-        /// Attribut présentant le DTO d'une description d'une porte
-        /// </summary>
-        public String Description { get; set; }
-        /// <summary>
-        /// Attribut présentant le DTO d'une location d'une porte
-        /// </summary>
-        public String Location { get; set; }
-        /// <summary>
-        /// Attribut présentant le DTO de l'état d'une porte
-        /// </summary>
-        public bool Actif { get; set; }
+        public string nom { get; set; }
 
         /// <summary>
-        /// Constructeur par défaut de la classe PorteDTO.
+        /// Propriété permettant d'accéder à la description de la porte DTO.
         /// </summary>
-        /// <param name="uneporte"></param>
-        public PorteDTO(Porte uneporte)
-        {
-            this.Nom = uneporte.Nom;
-            this.Description = uneporte.Description;
-            this.Location = uneporte.Location;
-            this.Actif = uneporte.Actif;
-        }
+        public string description { get; set; }
+
+        /// <summary>
+        /// Propriété permettant d'accéder à la location de la porte DTO.
+        /// </summary>
+        public string location { get; set; }
+        /// <summary>
+        /// Propriété permettant d'accéder à l'état de la porte DTO.
+        /// </summary>
+
+        public bool actif { get; set; }
     }
 }

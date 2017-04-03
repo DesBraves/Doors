@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\PorteDTO.cs" />
     <Compile Include="DTO\UsagerDTO.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Modele\porte.cs" />
