@@ -17,7 +17,7 @@ namespace App1.DTO
     {
         /// <summary>
         /// nom de l'usager
-        /// fuck off m8
+        /// 
         /// </summary>
 
         public string nom { get; set; }
@@ -45,11 +45,11 @@ namespace App1.DTO
         /// Adresse courriel de l'usager
         /// </summary>
 
-        public string courriel{ get; set; }
-    /// <summary>
-    /// Numero de téléphone de l'usager
-    /// </summary>
-    public string telephone { get; set; }
+        public string courriel { get; set; }
+        /// <summary>
+        /// Numero de téléphone de l'usager
+        /// </summary>
+        public string telephone { get; set; }
 
 
         public UsagerDTO(Usager unUsager)
