@@ -87,6 +87,12 @@ namespace App1
 			// aapt resource value: 0x7f050007
 			public const int tableRow4 = 2131034119;
 			
+			// aapt resource value: 0x7f05000a
+			public const int tableRow5 = 2131034122;
+			
+			// aapt resource value: 0x7f050009
+			public const int textView1 = 2131034121;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -102,6 +108,9 @@ namespace App1
 			
 			// aapt resource value: 0x7f030000
 			public const int Main = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int VueUsager = 2130903041;
 			
 			static Layout()
 			{
