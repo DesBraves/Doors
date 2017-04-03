@@ -1,41 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TableRow
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tableRow1" />
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
     <TableLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tableLayout1">
         <TableRow
-            android:id="@+id/tableRow2">
-        </TableRow>
-        <TableRow
             android:id="@+id/tableRow3">
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow4">
+            <TextView
+                android:text="Depense : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelDepense" />
+            <EditText
+                android:inputType="number"
+                android:id="@+id/ContenuDepense"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
         </TableRow>
     </TableLayout>
-    <TextView
-        android:text="Medium Text"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:layout_marginRight="0.0dp" />
-    <TableRow
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tableRow5" />
 </LinearLayout>
