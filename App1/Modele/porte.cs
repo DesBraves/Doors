@@ -115,7 +115,6 @@ namespace App1.Modele
         /// <summary>
         /// Méthode permettant d'obtenir le Hashcode d'une porte.
         /// </summary>
-        /// joe bloe
         /// <returns>Le Hashcode de la dépense.</returns>
         public override int GetHashCode()
         {
