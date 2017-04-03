@@ -54,7 +54,6 @@
     <Compile Include="DTO\CarteDTO.cs" />
     <Compile Include="DTO\PorteDTO.cs" />
     <Compile Include="DTO\UsagerDTO.cs" />
-    <Compile Include="MainActivity.cs" />
     <Compile Include="Modele\Carte.cs" />
     <Compile Include="Modele\porte.cs" />
     <Compile Include="Modele\usager.cs" />
