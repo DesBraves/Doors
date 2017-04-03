@@ -60,7 +60,7 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vue\MainActivity.cs" />
-    <Compile Include="Vue\VueCartes.cs" />
+    <Compile Include="Vue\UsagerActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
