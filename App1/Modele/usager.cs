@@ -63,13 +63,6 @@ namespace App1.Modele
 
       public string KeyPadCode { get; set; }
 
-
-
-
-
-
-
-
       /// <summary>
       /// Constructeur par défaut
       /// </summary>

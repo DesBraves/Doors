@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Code : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelCodePorte" />
+            <EditText
+                android:inputType="text"
+                android:id="@+id/ContenuCodePorte"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Date création : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelDateCarte" />
+            <EditText
+                android:inputType="date"
+                android:id="@+id/ContenuDateCarte"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Type : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelTypeCarte" />
+            <EditText
+                android:inputType="text"
+                android:id="@+id/ContenuTypeCarte"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <Switch
+            android:id="@+id/switchCarte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Actif :" />
+    </TableLayout>
 </LinearLayout>
