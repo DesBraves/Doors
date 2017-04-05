@@ -12,10 +12,10 @@
             <TextView
                 android:text="Nom : "
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/LabelNom" />
+                android:id="@+id/LabelNomUsager" />
             <EditText
                 android:inputType="text"
-                android:id="@+id/ContenuNom"
+                android:id="@+id/ContenuNomUsager"
                 android:layout_width="284.6dp"
                 android:layout_height="30dp" />
         </TableRow>
@@ -24,10 +24,10 @@
             <TextView
                 android:text="Prénom : "
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/LabelPrenom" />
+                android:id="@+id/LabelPrenomUsager" />
             <EditText
                 android:inputType="text"
-                android:id="@+id/ContenuPrenom"
+                android:id="@+id/ContenuPrenomUsager"
                 android:layout_width="284.6dp"
                 android:layout_height="30dp" />
         </TableRow>
@@ -36,10 +36,10 @@
             <TextView
                 android:text="Adresse : "
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/LabelAdresse" />
+                android:id="@+id/LabelAdresseUsager" />
             <EditText
                 android:inputType="text"
-                android:id="@+id/ContenuAdresse"
+                android:id="@+id/ContenuAdresseUsager"
                 android:layout_width="284.6dp"
                 android:layout_height="30dp" />
         </TableRow>
@@ -48,10 +48,10 @@
             <TextView
                 android:text="Courriel : "
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/LabelCourriel" />
+                android:id="@+id/LabelCourrielUsager" />
             <EditText
                 android:inputType="textEmailAddress"
-                android:id="@+id/ContenuCourriel"
+                android:id="@+id/ContenuCourrielUsager"
                 android:layout_width="284.6dp"
                 android:layout_height="30dp" />
         </TableRow>
@@ -60,10 +60,10 @@
             <TextView
                 android:text="Email : "
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/LabelCourriel" />
+                android:id="@+id/LabelCourrielUsager" />
             <EditText
                 android:inputType="textEmailAddress"
-                android:id="@+id/ContenuCourriel"
+                android:id="@+id/ContenuCourrielUsager"
                 android:layout_width="284.6dp"
                 android:layout_height="30dp" />
         </TableRow>
@@ -72,15 +72,15 @@
             <TextView
                 android:text="Téléphone : "
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/LabelTelephone" />
+                android:id="@+id/LabelTelephoneUsager" />
             <EditText
                 android:inputType="phone"
-                android:id="@+id/ContenuTelephone"
+                android:id="@+id/ContenuTelephoneUsager"
                 android:layout_width="284.6dp"
                 android:layout_height="30dp" />
         </TableRow>
         <Switch
-            android:id="@+id/switchPorte"
+            android:id="@+id/switchUsager"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"

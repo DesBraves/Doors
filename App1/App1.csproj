@@ -58,9 +58,9 @@
     <Compile Include="Modele\Carte.cs" />
     <Compile Include="Modele\Porte.cs" />
     <Compile Include="Modele\Usager.cs" />
-    <Compile Include="Resources\DAO\CarteRepository.cs" />
-    <Compile Include="Resources\DAO\Repository.cs" />
-    <Compile Include="Resources\DAO\UsagerRepository.cs" />
+    <Compile Include="DAO\CarteRepository.cs" />
+    <Compile Include="DAO\Repository.cs" />
+    <Compile Include="DAO\UsagerRepository.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vue\MainActivity.cs" />
@@ -71,6 +71,13 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\VueUsager.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\VuePorte.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ListViewUsager.axml" />
+    <AndroidResource Include="Resources\layout\Carte.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
