@@ -60,11 +60,35 @@ namespace App1
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f05000e
+			public const int ContenuAdresse = 2131034126;
+			
+			// aapt resource value: 0x7f050010
+			public const int ContenuCourriel = 2131034128;
+			
 			// aapt resource value: 0x7f05000a
-			public const int ContenuDepense = 2131034122;
+			public const int ContenuNom = 2131034122;
+			
+			// aapt resource value: 0x7f05000c
+			public const int ContenuPrenom = 2131034124;
+			
+			// aapt resource value: 0x7f050012
+			public const int ContenuTelephone = 2131034130;
+			
+			// aapt resource value: 0x7f05000d
+			public const int LabelAdresse = 2131034125;
+			
+			// aapt resource value: 0x7f05000f
+			public const int LabelCourriel = 2131034127;
 			
 			// aapt resource value: 0x7f050009
-			public const int LabelDepense = 2131034121;
+			public const int LabelNom = 2131034121;
+			
+			// aapt resource value: 0x7f05000b
+			public const int LabelPrenom = 2131034123;
+			
+			// aapt resource value: 0x7f050011
+			public const int LabelTelephone = 2131034129;
 			
 			// aapt resource value: 0x7f050002
 			public const int btnCartes = 2131034114;
@@ -77,6 +101,9 @@ namespace App1
 			
 			// aapt resource value: 0x7f050004
 			public const int btnUsagers = 2131034116;
+			
+			// aapt resource value: 0x7f050013
+			public const int switchPorte = 2131034131;
 			
 			// aapt resource value: 0x7f050000
 			public const int tableLayout1 = 2131034112;

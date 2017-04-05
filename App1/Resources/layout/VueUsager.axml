@@ -10,14 +10,80 @@
         <TableRow
             android:id="@+id/tableRow3">
             <TextView
-                android:text="Depense : "
+                android:text="Nom : "
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/LabelDepense" />
+                android:id="@+id/LabelNom" />
             <EditText
-                android:inputType="number"
-                android:id="@+id/ContenuDepense"
+                android:inputType="text"
+                android:id="@+id/ContenuNom"
                 android:layout_width="284.6dp"
                 android:layout_height="30dp" />
         </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Prénom : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelPrenom" />
+            <EditText
+                android:inputType="text"
+                android:id="@+id/ContenuPrenom"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Adresse : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelAdresse" />
+            <EditText
+                android:inputType="text"
+                android:id="@+id/ContenuAdresse"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Courriel : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelCourriel" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/ContenuCourriel"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Email : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelCourriel" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/ContenuCourriel"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Téléphone : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelTelephone" />
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/ContenuTelephone"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <Switch
+            android:id="@+id/switchPorte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Actif :" />
     </TableLayout>
 </LinearLayout>
