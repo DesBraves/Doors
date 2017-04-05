@@ -18,7 +18,7 @@ namespace App1.Vue
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            SetContentView(Resource.Layout.VueUsager);
             // Create your application here
         }
     }
