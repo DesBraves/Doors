@@ -9,6 +9,7 @@
 // *******************************************************
 //   2017-03-29	Gabriel Marmen          Version non complete.
 //   2017-04-05   Philippe Jolicoeur      Complétion version initial, Modifications des propriétées.
+//   2017-04-05	Gabriel Marmen          Mise a jour des override et des propriété pour la compatibilité avec la base de données
 // *******************************************************/
 using System;
 using System.Collections.Generic;
@@ -26,10 +27,17 @@ namespace App1.Modele
    class Usager
    {
       /// <summary>
+      /// Id de l'usager
+      /// </summary>
+      private int id;
+      public int Id { get; set; }
+   
+      /// <summary>
       /// nom de l'usager
       /// </summary>
       private string nom;
       public string Nom { get; set; }
+      
       /// <summary>
       /// prénom de l'usager
       /// </summary>
@@ -61,28 +69,56 @@ namespace App1.Modele
       private string telephone;
       public string Telephone { get; set; }
 
+      /// <summary>
+      /// Le code keypad de l'utilisateur
+      /// </summary>
+      private string keyPadCode;
       public string KeyPadCode { get; set; }
 
 
-
-
-
-
-
+      /// <summary>
+      /// Le nom d'utilisateur de l'usager
+      /// </summary>
+      private string nomUsager;
+      public string NomUsager { get; set; }
 
       /// <summary>
-      /// Constructeur par défaut
+      /// Mot de passe de l'utilisateur
       /// </summary>
-      /// <param name="nom"></param>
-      /// <param name="prenom"></param>
-      /// <param name="listeCarte"></param>
-      /// <param name="actif"></param>
-      public Usager(string nom, string prenom, List<Carte> listeCarte, bool actif)
+      private string motDePasse;
+      public string MotDePasse { get; set; }
+        
+
+      /// <summary>
+      /// L'id du departement de l'usager
+      /// </summary>
+      private int idDepartement;
+      public int IdDepartement { get; set; }
+
+
+
+
+
+
+
+
+        /// <summary>
+        /// Constructeur par défaut
+        /// </summary>
+        /// <param name="nom"></param>
+        /// <param name="prenom"></param>
+        /// <param name="listeCarte"></param>
+        /// <param name="actif"></param>
+        public Usager(string nom, string prenom, string nomUsager,/* List<Carte> listeCarte*/ bool actif, string motDePasse, string keyPadCode, int id, int idDepartement)
         {
             this.Nom = nom;
             this.Prenom = prenom;
-            this.ListeCarte = listeCarte;
             this.Actif = actif;
+            this.IdDepartement = idDepartement;
+            this.MotDePasse = motDePasse;
+            this.KeyPadCode = keyPadCode;
+            this.Id = id;
+            this.NomUsager = nomUsager;
         }
         /// <summary>
         /// Permet d'activer ou de désactiver un usager. Si l'usager est actif, l'execution de
@@ -97,6 +133,18 @@ namespace App1.Modele
             else this.actif = true;
         }
 
+        public string IsActif()
+        {
+            if (actif)
+
+            {
+                return "est actif";
+            }
+            else
+            {
+                return "n'est pas actif";
+            }
+        }
         /// <summary>
         /// Override la fonction equals de l'objet usager
         /// </summary>
@@ -125,5 +173,17 @@ namespace App1.Modele
          return (1 * this.Nom.Length) + (2 * this.Prenom.Length) + (3 * this.Adresse.Length) + (4 * this.Courriel.Length) + (5 * this.Telephone.Length);
       }
 
-   }
+
+
+
+        /// <summary>
+        /// Permet d'activer ou de désactiver un usager. Si l'usager est actif, l'execution de
+        /// cette methode le desactiveras et dans le cas contraire elle l'activeras
+        /// </summary>
+        public override string ToString()
+        {
+            return "L'utlisateur" + this.Prenom + " " + this.Nom + IsActif() + ". Il fait partie du département" + this.IdDepartement + "et a le nom d'usager" + this.nomUsager;
+        }
+
+    }
 }
