@@ -17,7 +17,7 @@ namespace Door_DAO.DAO
         /// </summary>
         public Repository()
         {
-            connexion = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Door;Data Source=RÉFÉRENCE1314");
+            connexion = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Door;Data Source=localhost");
         }
 
         /// <summary>

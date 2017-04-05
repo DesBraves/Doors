@@ -1,3 +1,15 @@
+// /******************************************************
+// Projet :               CTEW_DOOR
+// Auteur(e)(s) :         Philippe Jolicoeur     
+// Nom du fichier :       Carte.cs
+// Date crée :            2017-03-29
+// Date dern. modif. :    2017-04-05
+// *******************************************************
+//  Historique des modifications
+// *******************************************************
+//   2017-03-29	Philippe Jolicoeur      Version initiale.
+//   2017-04-05   Philippe Jolicoeur      Modification des propriétées.
+// *******************************************************/
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +40,7 @@ namespace App1.Modele
       /// Attribut description : description de la carte
       /// Propriété permettant d'accéder à la description de l'attribut description et à la modifier.
       /// </summary>
-      public string Description { get; set; }
+      public DateTime DateCreation { get; set; }
 
       /// <summary>
       /// Attribut type : Connaitre le type de carte (nfc, autre)
@@ -43,8 +55,8 @@ namespace App1.Modele
       {
          Actif = false;
          Code = "";
-         Description = "";
          Type = "";
+         DateCreation = "";
       }
       /// <summary>
       /// Constructeur carte

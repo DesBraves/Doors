@@ -1,4 +1,4 @@
-﻿using Door_DAO.DTO;
+﻿using App1.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,10 +6,10 @@ using System.Data.SqlClient;
 
 namespace Door_DAO.DAO
 {
-    /// <summary>
-    /// Classe représentant le répository d'une carte.
-    /// </summary>
-    class CarteRepository : Repository
+   /// <summary>
+   /// Classe représentant le répository d'une carte.
+   /// </summary>
+   class CarteRepository : Repository
     {
         #region Constructeurs
 

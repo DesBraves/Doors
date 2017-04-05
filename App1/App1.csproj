@@ -47,6 +47,7 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -55,8 +56,8 @@
     <Compile Include="DTO\PorteDTO.cs" />
     <Compile Include="DTO\UsagerDTO.cs" />
     <Compile Include="Modele\Carte.cs" />
-    <Compile Include="Modele\porte.cs" />
-    <Compile Include="Modele\usager.cs" />
+    <Compile Include="Modele\Porte.cs" />
+    <Compile Include="Modele\Usager.cs" />
     <Compile Include="Resources\DAO\CarteRepository.cs" />
     <Compile Include="Resources\DAO\Repository.cs" />
     <Compile Include="Resources\DAO\UsagerRepository.cs" />
