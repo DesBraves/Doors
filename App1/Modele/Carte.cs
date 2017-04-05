@@ -9,6 +9,8 @@
 // *******************************************************
 //   2017-03-29	Philippe Jolicoeur      Version initiale.
 //   2017-04-05   Philippe Jolicoeur      Modification des propriétées.
+//   2017-04-05     Charles Vaillancourt    Modification de la propriété DateCreation pour obtenir la date système automatiquement.
+
 // *******************************************************/
 using System;
 using System.Collections.Generic;
@@ -36,17 +38,24 @@ namespace App1.Modele
       /// Propriété permettant d'accéder à la description de l'attribut code et à la modifier.
       /// </summary>
       public string Code { get; set; }
-      /// <summary>
-      /// Attribut description : description de la carte
-      /// Propriété permettant d'accéder à la description de l'attribut description et à la modifier.
-      /// </summary>
-      public DateTime DateCreation { get; set; }
+        /// <summary>
+        /// Attribut description : description de la carte
+        /// </summary>
+        protected DateTime dateCreation;
+        /// <summary>
+        /// Propriété permettant d'obtenir la date système au moment de la transaction.
+        /// </summary>
+        public DateTime DateCreation
+        {
+            get { return this.dateCreation; }
+            set { this.dateCreation = DateTime.Now; }
+        }
 
-      /// <summary>
-      /// Attribut type : Connaitre le type de carte (nfc, autre)
-      /// Propriété permettant d'accéder à la description de l'attribut type et à la modifier.
-      /// </summary>
-      public string Type { get; set; }
+        /// <summary>
+        /// Attribut type : Connaitre le type de carte (nfc, autre)
+        /// Propriété permettant d'accéder à la description de l'attribut type et à la modifier.
+        /// </summary>
+        public string Type { get; set; }
 
       /// <summary>
       /// Constructeur carte
@@ -56,7 +65,7 @@ namespace App1.Modele
          Actif = false;
          Code = "";
          Type = "";
-         DateCreation = "";
+       
       }
       /// <summary>
       /// Constructeur carte
@@ -65,11 +74,10 @@ namespace App1.Modele
       /// <param name="code"></param>
       /// <param name="description"></param>
       /// <param name="type"></param>
-      Carte(bool actif, string code, string description, string type)
+      Carte(bool actif, string code, DateTime DateCreation, string type, )
       {
          Actif = actif;
          Code = code;
-         Description = description;
          Type = type;
       }
 

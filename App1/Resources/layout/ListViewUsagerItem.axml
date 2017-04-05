@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="46.0dp">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:id="@+id/LabelNomActeur"
+                android:text="NOM :"
+                android:layout_height="25.5dp"
+                android:layout_width="70.0dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="2"
+                android:id="@+id/ContenuNomActeur" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

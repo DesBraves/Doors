@@ -15,7 +15,7 @@
             android:id="@+id/tableRow1"
             android:layout_height="42.0dp">
             <Button
-                android:text="Cartes"
+                android:text="Ajouter carte"
                 android:layout_column="0"
                 android:id="@+id/btnCartes"
                 android:layout_width="382.5dp" />
@@ -24,7 +24,7 @@
             android:id="@+id/tableRow2"
             android:layout_height="42.0dp">
             <Button
-                android:text="Usagers"
+                android:text="Ajouter usager"
                 android:layout_column="0"
                 android:id="@+id/btnUsagers"
                 android:layout_width="382.5dp" />
@@ -33,7 +33,7 @@
             android:id="@+id/tableRow3"
             android:layout_height="42.0dp">
             <Button
-                android:text="Groupes"
+                android:text="Ajouter groupes"
                 android:layout_column="0"
                 android:id="@+id/btnGroupes"
                 android:layout_width="382.5dp" />
@@ -42,9 +42,27 @@
             android:id="@+id/tableRow4"
             android:layout_height="42.0dp">
             <Button
-                android:text="Portes"
+                android:text="Ajouter portes"
                 android:layout_column="0"
                 android:id="@+id/btnPortes"
+                android:layout_width="382.5dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="42.0dp">
+            <Button
+                android:text="Afficher usagés"
+                android:layout_column="0"
+                android:id="@+id/btnAfficherUsager"
+                android:layout_width="382.5dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="42.0dp">
+            <Button
+                android:text="Afficher portes"
+                android:layout_column="0"
+                android:id="@+id/btnAfficherPorte"
                 android:layout_width="382.5dp" />
         </TableRow>
     </TableLayout>

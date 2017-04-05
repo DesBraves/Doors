@@ -76,40 +76,20 @@ namespace App1.Modele
       public string KeyPadCode { get; set; }
 
 
-      /// <summary>
-      /// Le nom d'utilisateur de l'usager
-      /// </summary>
-      private string nomUsager;
-      public string NomUsager { get; set; }
 
-      /// <summary>
-      /// Mot de passe de l'utilisateur
-      /// </summary>
-      private string motDePasse;
-      public string MotDePasse { get; set; }
-        
+
+
+
+
 
       /// <summary>
-      /// L'id du departement de l'usager
+      /// Constructeur par défaut
       /// </summary>
-      private int idDepartement;
-      public int IdDepartement { get; set; }
-
-
-
-
-
-
-
-
-        /// <summary>
-        /// Constructeur par défaut
-        /// </summary>
-        /// <param name="nom"></param>
-        /// <param name="prenom"></param>
-        /// <param name="listeCarte"></param>
-        /// <param name="actif"></param>
-        public Usager(string nom, string prenom, string nomUsager,/* List<Carte> listeCarte*/ bool actif, string motDePasse, string keyPadCode, int id, int idDepartement)
+      /// <param name="nom"></param>
+      /// <param name="prenom"></param>
+      /// <param name="listeCarte"></param>
+      /// <param name="actif"></param>
+      public Usager(string nom, string prenom, List<Carte> listeCarte, bool actif)
         {
             this.Nom = nom;
             this.Prenom = prenom;
