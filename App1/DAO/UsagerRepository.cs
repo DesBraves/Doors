@@ -71,7 +71,7 @@ namespace Door_DAO.DAO
 
             nomParam.Value = usagerDTO.Nom;
             prenomParam.Value = usagerDTO.Prenom;
-            usagerParam.Value = usagerDTO.Usager;
+            usagerParam.Value = usagerDTO.NomUsager;
             motDePasseParam.Value = usagerDTO.MotDePasse;
             keyPadCodeParam.Value = usagerDTO.KeyPadCode;
             actifParam.Value = usagerDTO.Actif;
@@ -176,7 +176,7 @@ namespace Door_DAO.DAO
                 unUsager = new UsagerDTO();
                 unUsager.Nom = reader.GetString(1);
                 unUsager.Prenom = reader.GetString(2);
-                unUsager.Usager = reader.GetString(3);
+                unUsager.NomUsager = reader.GetString(3);
                 unUsager.MotDePasse = reader.GetString(4);
                 unUsager.KeyPadCode = reader.GetString(5);
                 unUsager.Actif = reader.GetBoolean(6);
@@ -213,7 +213,7 @@ namespace Door_DAO.DAO
                     UsagerDTO unUsager = new UsagerDTO();
                     unUsager.Nom = reader.GetString(1);
                     unUsager.Prenom = reader.GetString(2);
-                    unUsager.Usager = reader.GetString(3);
+                    unUsager.NomUsager = reader.GetString(3);
                     unUsager.MotDePasse = reader.GetString(4);
                     unUsager.KeyPadCode = reader.GetString(5);
                     unUsager.Actif = reader.GetBoolean(6);
