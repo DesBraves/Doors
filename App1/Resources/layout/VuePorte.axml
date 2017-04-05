@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Nom : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelNomPorte" />
+            <EditText
+                android:inputType="text"
+                android:id="@+id/ContenuNom"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Description : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelDescriptionPorte" />
+            <EditText
+                android:inputType="text"
+                android:id="@+id/ContenuDescriptionPorte"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Location : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/LabelLocationPorte" />
+            <EditText
+                android:inputType="text"
+                android:id="@+id/ContenuLocationPorte"
+                android:layout_width="284.6dp"
+                android:layout_height="30dp" />
+        </TableRow>
+        <Switch
+            android:id="@+id/switchPorte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Actif :" />
+    </TableLayout>
+</LinearLayout>
