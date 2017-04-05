@@ -56,7 +56,7 @@ namespace App1.Modele
          Actif = false;
          Code = "";
          Type = "";
-         DateCreation = "";
+       
       }
       /// <summary>
       /// Constructeur carte
@@ -65,11 +65,10 @@ namespace App1.Modele
       /// <param name="code"></param>
       /// <param name="description"></param>
       /// <param name="type"></param>
-      Carte(bool actif, string code, string description, string type)
+      Carte(bool actif, string code, DateTime DateCreation, string type, )
       {
          Actif = actif;
          Code = code;
-         Description = description;
          Type = type;
       }
 
