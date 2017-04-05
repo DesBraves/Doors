@@ -37,7 +37,7 @@ namespace App1.Modele
       /// Attribut code : code de la carte (nfc)
       /// Propriété permettant d'accéder à la description de l'attribut code et à la modifier.
       /// </summary>
-      public string Code { get; set; }
+      public string NFCCode { get; set; }
         /// <summary>
         /// Attribut description : description de la carte
         /// </summary>
@@ -55,7 +55,7 @@ namespace App1.Modele
         /// Attribut type : Connaitre le type de carte (nfc, autre)
         /// Propriété permettant d'accéder à la description de l'attribut type et à la modifier.
         /// </summary>
-        public string Type { get; set; }
+        public string TypeCarte { get; set; }
 
       /// <summary>
       /// Constructeur carte
@@ -63,8 +63,8 @@ namespace App1.Modele
       Carte()
       {
          Actif = false;
-         Code = "";
-         Type = "";
+         NFCCode = "";
+         TypeCarte = "";
        
       }
       /// <summary>
@@ -74,17 +74,17 @@ namespace App1.Modele
       /// <param name="code"></param>
       /// <param name="description"></param>
       /// <param name="type"></param>
-      Carte(bool actif, string code, DateTime DateCreation, string type, )
+      Carte(bool actif, string code, string type)
       {
          Actif = actif;
-         Code = code;
-         Type = type;
+         NFCCode = code;
+         TypeCarte = type;
       }
 
 
       public override string ToString()
       {
-         return "Le type de carte est " + Type + " sa description est " + Description + " sont code est " + Code + "son état est " + Actif + ".";
+         return "Le type de carte est " + TypeCarte  + " sont code est " + NFCCode + "son état est " + Actif + ".";
       }
       /// <summary>
       /// Méthode permettant de déterminer si deux portes sont identiques.
@@ -94,11 +94,9 @@ namespace App1.Modele
       public override bool Equals(object obj)
       {
          Porte maPorte = obj as Porte;
-         if ((this.Type.Equals(maPorte.Nom))
+         if ((this.TypeCarte.Equals(maPorte.Nom))
              &&
-             (this.Description.Equals(maPorte.Description))
-             &&
-             (this.Code.Equals(maPorte.Location))
+             (this.NFCCode.Equals(maPorte.Location))
              &&
              (this.Actif.Equals(maPorte.Actif))
              )
@@ -112,7 +110,7 @@ namespace App1.Modele
       /// <returns>Le Hashcode de la dépense.</returns>
       public override int GetHashCode()
       {
-         return (1 * this.Type.Length) + (2 * this.Description.Length) + (3 * this.Code.Length);
+         return (1 * this.TypeCarte.Length) + (3 * this.NFCCode.Length);
       }
    }
 }
