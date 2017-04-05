@@ -1,3 +1,14 @@
+// /******************************************************
+// Projet :               CTEW_DOOR
+// Auteur(e)(s) :         Charles Vaillancourt     
+// Nom du fichier :       Porte.cs
+// Date crée :            2017-03-29
+// Date dern. modif. :    2017-04-05
+// *******************************************************
+//  Historique des modifications
+// *******************************************************
+//   2017-03-29	Charles Vaillancourt          Version initial.
+// *******************************************************/
 using System;
 using System.Collections.Generic;
 using System.Linq;
