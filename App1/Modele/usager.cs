@@ -75,26 +75,36 @@ namespace App1.Modele
       private string keyPadCode;
       public string KeyPadCode { get; set; }
 
+        /// <summary>
+        /// Nom d'utilisateur de l'usager
+        /// </summary>
+        private string nomUsager;
+        public string NomUsager { get; set; }
+
+        /// <summary>
+        /// Mot de passe de l'utilisateur
+        /// </summary>
+        private string motDePasse;
+        public string MotDePasse { get; set; }
 
 
 
 
 
 
-
-      /// <summary>
-      /// Constructeur par défaut
-      /// </summary>
-      /// <param name="nom"></param>
-      /// <param name="prenom"></param>
-      /// <param name="listeCarte"></param>
-      /// <param name="actif"></param>
-      public Usager(string nom, string prenom, List<Carte> listeCarte, bool actif)
+        /// <summary>
+        /// Constructeur par défaut
+        /// </summary>
+        /// <param name="nom"></param>
+        /// <param name="prenom"></param>
+        /// <param name="listeCarte"></param>
+        /// <param name="actif"></param>
+        public Usager(string nom, string prenom, List<Carte> listeCarte, bool actif)
         {
             this.Nom = nom;
             this.Prenom = prenom;
             this.Actif = actif;
-            this.IdDepartement = idDepartement;
+            //this.IdDepartement = idDepartement;
             this.MotDePasse = motDePasse;
             this.KeyPadCode = keyPadCode;
             this.Id = id;
@@ -162,7 +172,7 @@ namespace App1.Modele
         /// </summary>
         public override string ToString()
         {
-            return "L'utlisateur" + this.Prenom + " " + this.Nom + IsActif() + ". Il fait partie du département" + this.IdDepartement + "et a le nom d'usager" + this.nomUsager;
+            return "L'utlisateur" + this.Prenom + " " + this.Nom + IsActif() + ". Il fait partie du département " + /*this.IdDepartement*/ "et a le nom d'usager" + this.nomUsager;
         }
 
     }
