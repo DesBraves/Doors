@@ -99,7 +99,7 @@ namespace App1.DTO
             //this.Courriel = unUsager.Courriel;
             this.Actif = unUsager.Actif;
             //this.Adresse = unUsager.Adresse;
-            this.IdDepartement = unUsager.IdDepartement;
+            //this.IdDepartement = unUsager.IdDepartement;
             this.NomUsager = unUsager.NomUsager;
             this.KeyPadCode = unUsager.KeyPadCode;
             this.Id = unUsager.Id;
