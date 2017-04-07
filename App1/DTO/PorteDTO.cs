@@ -47,7 +47,7 @@ namespace App1.DTO
         /// <summary>
         /// Constructeur de la classe porteDTO
         /// </summary>
-        public PorteDTO(Porte unePorte)
+        PorteDTO(Porte unePorte)
         {
             this.actif = unePorte.Actif;
             this.description = unePorte.Description;
