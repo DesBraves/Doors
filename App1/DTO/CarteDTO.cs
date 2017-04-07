@@ -50,8 +50,8 @@ namespace App1.DTO
       public CarteDTO(Carte uneCarte)
       {
          this.Actif = uneCarte.Actif;
-         this.TypeCarte = uneCarte.Type;
-         this.NFCCode = uneCarte.Code;
+         this.TypeCarte = uneCarte.TypeCarte;
+         this.NFCCode = uneCarte.NFCCode;
          this.DateCreation = uneCarte.DateCreation;
       }
    }
