@@ -52,7 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapteur\PorteAdapteur.cs" />
     <Compile Include="DTO\CarteDTO.cs" />
     <Compile Include="DTO\PorteDTO.cs" />
     <Compile Include="DTO\UsagerDTO.cs" />
