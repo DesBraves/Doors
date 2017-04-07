@@ -22,6 +22,7 @@ using Android.Widget;
 
 namespace App1.Modele
 {
+   //gregruj
     /// <summary>
     /// Classe de la porte
     /// </summary>
