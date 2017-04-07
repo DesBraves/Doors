@@ -25,7 +25,7 @@ namespace App1.Modele
     /// <summary>
     /// Classe de la porte
     /// </summary>
-    class Porte
+    public class Porte
     {
         /// <summary>
         /// Attribut présentant la porte
