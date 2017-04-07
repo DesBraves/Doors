@@ -79,9 +79,6 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ListViewUsagerItem.axml" />
     <AndroidResource Include="Resources\layout\ListViewUsager.axml" />
-    <AndroidResource Include="Resources\layout\Carte.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\AfficherUsager.axml" />
   </ItemGroup>
   <ItemGroup>
