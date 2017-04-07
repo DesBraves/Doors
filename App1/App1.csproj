@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapteur\UsagerAdapteur.cs" />
     <Compile Include="DTO\CarteDTO.cs" />
     <Compile Include="DTO\PorteDTO.cs" />
     <Compile Include="DTO\UsagerDTO.cs" />
@@ -78,9 +79,6 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ListViewUsagerItem.axml" />
     <AndroidResource Include="Resources\layout\ListViewUsager.axml" />
-    <AndroidResource Include="Resources\layout\Carte.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\AfficherUsager.axml" />
   </ItemGroup>
   <ItemGroup>
@@ -98,7 +96,6 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Adapteur\" />
     <Folder Include="Controlleur\" />
     <Folder Include="Repository\" />
   </ItemGroup>
