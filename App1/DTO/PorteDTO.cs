@@ -23,7 +23,7 @@ using Android.Widget;
 
 namespace App1.DTO
 {
-    class PorteDTO
+    public class PorteDTO
     {
         /// <summary>
         /// Propriété permettant d'accéder au nom de la porte DTO.
